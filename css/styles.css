@@ -1,0 +1,151 @@
+h1{
+  color:hsl(300, 43%, 22%);
+  font-size: 50px;
+}
+p{
+  color:hsl(303, 10%, 53%);
+}
+
+.review-heading{
+  display:inline;
+  color: hsl(300, 43%, 22%);
+}
+
+.review{
+  padding:20px;
+  width:100%;
+  background-color: hsl(300, 24%, 96%);
+  margin: 20px;
+  border-radius: 20px;
+}
+.review.first{
+  margin-left:-140px;
+}
+.review.second{
+  margin-left:-100px;
+}
+.review.third{
+  margin-left:-60px;
+}
+.img-last-star{
+  margin-right: 20px;
+}
+
+.card{
+  width:70%;
+  margin: 100px auto;
+}
+
+.top-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.bottom-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height:400px;
+}
+
+.left-top-container, .right-top-container{
+  width:50%;
+}
+
+.left-top-container{
+  padding-right: 250px;
+}
+.right-top-container{
+  padding-top: 25px;
+}
+.img-review{
+  float:left;
+  border-radius: 100%;
+  margin-right:20px;
+}
+.review-card{
+  width:33%;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 20px;
+  padding:20px;
+  margin-right: 20px;
+  height:70%;
+}
+.review-heading-profile{
+  padding-top:20px;
+  color:white;
+  margin-bottom: 0;
+}
+
+.review-heading-status{
+  margin-top:0;
+  color:hsl(333, 80%, 67%);
+}
+.review-paragraph{
+  color:white;
+  padding-top:10px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.review-card.second{
+  margin-top: 20px;
+}
+
+.review-card.third{
+  margin-top:40px;
+}
+.bg-top{
+  position:absolute;
+  top:0;
+}
+.bg-bottom{
+  position:absolute;
+  bottom:0;
+  top:400px;
+  left:400px;
+}
+.mobile{
+  display:none;
+}
+
+
+
+@media screen and (max-width:1219px){
+  .desktop{
+    display:none;
+  }
+  .mobile{
+    display:inline;
+  }
+  .top-container{
+    flex-direction: column;
+  }
+  .left-top-container, .right-top-container{
+    width:100%;
+  }
+  .bottom-container{
+    flex-direction: column;
+    height: auto;
+  }
+  .review-card.third, .review-card.second{
+    margin-top:20px;
+  }
+  .review-card{
+    width:90%;
+  }
+  .review.first, .review.second, .review.third{
+    margin:20px auto;
+    text-align: center;
+  }
+  .review-heading{
+    display:block;
+  }
+  .bg-bottom.mobile.bt{
+    top:1500px;
+    right:0;
+    left:150px;
+    bottom: 0;
+  }
+}
